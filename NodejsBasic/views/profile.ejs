@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+<br><br>
+  <h1>Profile!!</h1>
+  <%- messages() %>
+      <% if(user){ %>
+        <h3><%= user.name %></h3>
+        <h3><%= user.email %></h3>
+      <% } %>
+<%- include home-layout-02 %>
+<script>
+   $('#messages').addClass("alert alert-success");
+</script>
+<%-  include("partials/footer") %>

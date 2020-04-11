@@ -1,0 +1,80 @@
+<style>
+    .column-1 {
+      float: left;
+      width: 15%;
+      padding: 10px;
+      height: 1000px;
+    }
+    .column-2 {
+      float: left;
+      width: 70%;
+      padding: 10px;
+      height: 1000px;
+    }
+    .column-3 {
+      float: left;
+      width: 15%;
+      padding: 10px;
+      height: 1000px;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+</style>
+  
+<section>
+    <div class="column-1" >
+        <nav id="navbar-example3" class="navbar navbar-light bg-light">
+            <a class="navbar-brand w3-panel  w3-hover-grey" href="#">หน้าแรก</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link w3-panel  w3-hover-grey" href="#item-1">บทนำ</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1 w3-panel  w3-hover-grey" href="#item-1-1">คำนำ</a>
+                <a class="nav-link ml-3 my-1 w3-panel  w3-hover-grey" href="#item-1-2">ความสำคัญ</a>
+              </nav>
+              <a class="nav-link w3-panel  w3-hover-grey" href="#item-2">แนะนำอาชีพ</a>
+              <a class="nav-link w3-panel  w3-hover-grey" href="#item-3">รายได้แต่ละอาชีพ</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1 w3-panel  w3-hover-grey" href="#item-3-1">แนะนำหนังสือแต่ละอาชีพ</a>
+                <a class="nav-link ml-3 my-1 w3-panel  w3-hover-grey" href="#item-3-2">ความคิดเห็น</a>
+              </nav>
+            </nav>
+          </nav>
+      </div>
+      <div class="column-2" >
+        <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+            <h4 id="item-1" style="text-align: center;">บทนำ</h4>
+             <p>
+               <img class="w3-container w3-center w3-animate-zoom" src="https://c.min.ms/a/0/645/cz70c25ag4.jpg" width="100%">
+             </p>
+             <p style="text-align: center;">
+               ..............................................................................................................................................
+             </p>
+            <h5 id="item-1-1" style="text-align: center;">คำนำ</h5>
+            <p>...</p>
+            <h5 id="item-1-2" style="text-align: center;">ความสำคัญ</h5>
+            <p>...</p>
+            <h4 id="item-2" style="text-align: center;">แนะนำอาชีพ</h4>
+            <p>...</p>
+            <h4 id="item-3" style="text-align: center;">รายได้แต่ละอาชีพ</h4>
+            <p>...</p>
+            <h5 id="item-3-1" style="text-align: center;">แนะนำหนังสือแต่ละอาชีพ</h5>
+            <p>...</p>
+            <h5 id="item-3-2" style="text-align: center;">ความคิดเห็น</h5>
+            <p>...</p>
+          </div>
+
+      </div>
+      <div class="column-3">
+        <%- include Tag %>
+      </div>
+
+</section>
+    
+    
+    
+    
+    
